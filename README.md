@@ -83,3 +83,7 @@ export default App;
 ### 1.0.0
 
 - list-of-todos is made publicly available
+
+### 1.0.1
+
+- Inlined the icons in buttons

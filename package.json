@@ -1,6 +1,6 @@
 {
   "name": "list-of-todos",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A simple ToDo list.",
   "main": "lib/index.js",
   "sideEffects": false,
@@ -32,10 +32,9 @@
     "url": "https://github.com/iulian-radu-at/list-of-todos/issues"
   },
   "homepage": "https://github.com/iulian-radu-at/list-of-todos#readme",
-  "dependencies": {},
   "devDependencies": {
     "@babel/core": "^7.6.0",
-    "@storybook/react": "^5.2.0",
+    "@storybook/react": "^5.2.1",
     "@types/babel-core": "^6.25.6",
     "@types/enzyme": "^3.10.3",
     "@types/enzyme-adapter-react-16": "^1.0.5",
