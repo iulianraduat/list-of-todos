@@ -87,3 +87,7 @@ export default App;
 ### 1.0.1
 
 - Inlined the icons in buttons
+
+### 1.0.2
+
+- Fixed the layout

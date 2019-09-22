@@ -10,7 +10,6 @@ const styles: { [key: string]: React.CSSProperties } = {
   svg: {
     width: '1.5em',
     height: '1.5em',
-    paddingTop: 5,
     cursor: 'pointer'
   }
 };

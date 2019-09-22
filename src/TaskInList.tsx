@@ -6,6 +6,8 @@ import { Task } from './ListOfTodos';
 
 const styles: { [key: string]: React.CSSProperties } = {
   button: {
+    display: 'flex',
+    alignItems: 'center',
     marginRight: 10
   },
   container: {
