@@ -29,8 +29,9 @@ const ListOfTodos: React.FC<ListOfTodosProps> = ({ items, onChange, styleItem, s
     onChange(newItems, changedItem);
   };
 
-  const renderItem = (item: Task) => <TaskInList item={item} onChange={handleChangeTask} style={styleItem} />;
-
+  const renderItem = (item: Task) => (
+    <TaskInList key={item.id} item={item} onChange={handleChangeTask} style={styleItem} />
+  );
   const renderItems = items.map(renderItem);
 
   return <div style={getStyle(style, styleList)}>{renderItems}</div>;

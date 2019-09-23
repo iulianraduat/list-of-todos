@@ -95,3 +95,7 @@ export default App;
 ### 1.0.3
 
 - Added a second argument to onChange
+
+### 1.0.4
+
+- Added a key for react when rendering a task in the list
