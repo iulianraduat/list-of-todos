@@ -91,3 +91,7 @@ export default App;
 ### 1.0.2
 
 - Fixed the layout
+
+### 1.0.3
+
+- Added a second argument to onChange

@@ -14,7 +14,7 @@ export interface Task {
 
 interface ListOfTodosProps {
   items: Task[];
-  onChange: (items: Task[]) => void;
+  onChange: (items: Task[], item: Task) => void;
   styleItem?: React.CSSProperties;
   styleList?: React.CSSProperties;
 }
@@ -26,7 +26,7 @@ const ListOfTodos: React.FC<ListOfTodosProps> = ({ items, onChange, styleItem, s
 
   const handleChangeTask = (changedItem: Task) => {
     const newItems = items.map((item: Task) => (item.id !== changedItem.id ? item : changedItem));
-    onChange(newItems);
+    onChange(newItems, changedItem);
   };
 
   const renderItem = (item: Task) => <TaskInList item={item} onChange={handleChangeTask} style={styleItem} />;
