@@ -32,6 +32,7 @@ You can access the storybook for this component [here](https://iulian-radu-at.gi
 | ListOfTodos _uses_ | React  |
 |-------------------:|:------:|
 |              1.0.x | 16.8.0 |
+|              1.1.x | 16.9.0 |
 
 ### About versioning schema used for ListOfTodos
 
@@ -99,3 +100,7 @@ export default App;
 ### 1.0.4
 
 - Added a key for react when rendering a task in the list
+
+### 1.1.0
+
+- Updated packages
