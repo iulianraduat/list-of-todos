@@ -1,1 +1,1 @@
-export * from './ListOfTodos';
+export { default, Task } from "./ListOfTodos";
