@@ -8,7 +8,7 @@ const styles: { [key: string]: React.CSSProperties } = {
   button: {
     display: 'flex',
     alignItems: 'center',
-    marginRight: 10
+    marginRight: 10,
   },
   container: {
     display: 'flex',
@@ -16,20 +16,21 @@ const styles: { [key: string]: React.CSSProperties } = {
     backgroundColor: '#cccccc',
     border: 'solid 1px #444444',
     margin: 10,
-    padding: 10
+    padding: 10,
   },
   text: {
-    textAlign: 'left'
-  }
+    textAlign: 'left',
+  },
 };
 
 interface TaskInListProps {
+  className?: string;
   item: Task;
   onChange: (item: Task) => void;
   style?: React.CSSProperties;
 }
 
-const TaskInList: React.FC<TaskInListProps> = ({ item, onChange, style }) => {
+const TaskInList: React.FC<TaskInListProps> = ({ className, item, onChange, style }) => {
   const handleChangeToOpen = React.useCallback(() => {
     onChange({ ...item, done: false });
   }, [item, onChange]);
@@ -39,7 +40,7 @@ const TaskInList: React.FC<TaskInListProps> = ({ item, onChange, style }) => {
   }, [item, onChange]);
 
   return (
-    <div style={getStyle(styles.container, style)}>
+    <div className={className} style={getStyle(styles.container, style)}>
       <div style={styles.button}>
         {item.done ? <StatusDone onClick={handleChangeToOpen} /> : <StatusOpen onClick={handleChangeToDone} />}
       </div>

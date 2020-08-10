@@ -1,4 +1,4 @@
-# list-of-todos ![Weekly downloads](https://img.shields.io/npm/dw/list-of-todos "Weekly downloads")
+# list-of-todos ![Weekly downloads](https://img.shields.io/npm/dw/list-of-todos 'Weekly downloads')
 
 A simple ToDo list.
 
@@ -10,12 +10,14 @@ You can access the storybook for this component [here](https://iulian-radu-at.gi
 
 ## Props
 
-| Name      | Type                    | Required | Default | Description                                                     |
-| --------- | ----------------------- | -------- | ------- | --------------------------------------------------------------- |
-| items     | Task[]                  | no       | []      | The initial list of items                                       |
-| onChange  | (items: Task[]) => void | yes      | -       | The function called when there are changes in the list of items |
-| styleItem | CSSProperties           | no       | ...     | The custom style for an item                                    |
-| styleList | CSSProperties           | no       | ...     | The custom style for the list                                   |
+| Name          | Type                    | Required | Default | Description                                                     |
+| ------------- | ----------------------- | -------- | ------- | --------------------------------------------------------------- |
+| classNameItem | CSSProperties           | no       | ...     | The className for an item                                       |
+| classNameList | CSSProperties           | no       | ...     | The className for the list                                      |
+| items         | Task[]                  | no       | []      | The initial list of items                                       |
+| onChange      | (items: Task[]) => void | yes      | -       | The function called when there are changes in the list of items |
+| styleItem     | CSSProperties           | no       | ...     | The custom style for an item                                    |
+| styleList     | CSSProperties           | no       | ...     | The custom style for the list                                   |
 
 ## Props of Task
 
@@ -121,3 +123,7 @@ export default App;
 ### 1.1.4
 
 - Fixed crash produced by "export \* from"
+
+### 1.1.5
+
+- Added two new props: classNameItem and classNameList

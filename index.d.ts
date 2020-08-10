@@ -1,6 +1,8 @@
 import * as React from 'react';
 
 export interface ListOfTodosProps extends React.Props<ListOfTodos> {
+  classNameItem?: string;
+  classNameList?: string;
   items: Task[];
   onChange: (items: Task[], item: Task) => void;
   styleItem?: React.CSSProperties;
