@@ -127,3 +127,8 @@ export default App;
 ### 1.1.5
 
 - Added two new props: classNameItem and classNameList
+
+### 1.2.0
+
+- Accepting React 17 as peerDependencies
+- Fixed security warnings
