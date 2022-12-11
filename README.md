@@ -31,10 +31,11 @@ You can access the storybook for this component [here](https://iulian-radu-at.gi
 
 ## Versions
 
-| ListOfTodos _uses_ | React  |
-| -----------------: | :----: |
-|              1.0.x | 16.8.0 |
-|              1.1.x | 16.9.0 |
+| ListOfTodos _uses_ |  React   |
+| -----------------: | :------: |
+|              1.0.x |  16.8.0  |
+|              1.1.x |  16.9.0  |
+|              2.0.x | >=18.0.0 |
 
 ### About versioning schema used for ListOfTodos
 
@@ -136,3 +137,7 @@ export default App;
 ### 1.2.1
 
 - Updated packages
+
+### 2.0.0
+
+- Supports minimum React 18

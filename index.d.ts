@@ -1,6 +1,6 @@
 import * as React from 'react';
 
-export interface ListOfTodosProps extends React.Props<ListOfTodos> {
+export interface ListOfTodosProps {
   classNameItem?: string;
   classNameList?: string;
   items: Task[];
