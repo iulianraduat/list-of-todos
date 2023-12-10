@@ -1,4 +1,4 @@
-import { ComponentMeta, ComponentStory } from '@storybook/react';
+import { Meta, StoryObj } from '@storybook/react';
 import React from 'react';
 import ListOfTodos, { Task } from '../src/ListOfTodos';
 
@@ -33,12 +33,14 @@ const mockItems: Task[] = [
 
 const emptyHandle = () => {};
 
-export default {
+const meta: Meta<typeof ListOfTodos> = {
   title: 'ListOfTodos',
   component: ListOfTodos,
-} as ComponentMeta<typeof ListOfTodos>;
+} as Meta<typeof ListOfTodos>;
+export default meta;
+type Story = StoryObj<typeof ListOfTodos>;
 
-export const WithEmptyList: ComponentStory<typeof ListOfTodos> = () => (
+export const WithEmptyList = () => (
   <div style={styles.container}>
     <ListOfTodos items={[]} onChange={emptyHandle} />
     <div />
@@ -46,7 +48,7 @@ export const WithEmptyList: ComponentStory<typeof ListOfTodos> = () => (
   </div>
 );
 
-export const WithNonEmptyList: ComponentStory<typeof ListOfTodos> = () => {
+export const WithNonEmptyList = () => {
   const [items, setItems] = React.useState(mockItems);
 
   const handleChangeStatus = React.useCallback(
