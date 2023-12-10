@@ -145,3 +145,7 @@ export default App;
 ### 2.0.1
 
 - Updated packages
+
+### 2.0.2
+
+- Fixed bundled lib
